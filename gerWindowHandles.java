@@ -11,6 +11,7 @@ public class gerWindowHandles
 		driver.get("http://www.hyrtutorials.com/p/window-handles-practice.html");
 		System.out.println(driver.getWindowHandles());
 		Thread.sleep(5000);
+		driver.manage().window().maximize();
 		driver.findElement(By.id("newWindowBtn")).click();
 		System.out.println(driver.getWindowHandles());
 		
