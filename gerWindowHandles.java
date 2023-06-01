@@ -14,7 +14,8 @@ public class gerWindowHandles
 		driver.manage().window().maximize();
 		driver.findElement(By.id("newWindowBtn")).click();
 		System.out.println(driver.getWindowHandles());
-		
+				driver.manage().window().maximize();
+
 		driver.findElement(By.id("newWindowsBtn")).click();
 		System.out.println(driver.getWindowHandles());
 		
